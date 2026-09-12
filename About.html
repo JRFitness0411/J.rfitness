@@ -1,0 +1,372 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | J.R Fitness</title>
+
+    <style>
+        /* =========================
+           GLOBAL — MATCH MAIN SITE
+        ========================== */
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            padding: 0 20px;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* =========================
+           LOGO
+        ========================== */
+        .logo {
+            display: block;
+            width: 100%;
+            max-width: 180px;
+            height: auto;
+            margin: 30px auto 20px auto;
+        }
+
+        /* =========================
+           NAVIGATION — MATCHES HOMEPAGE
+        ========================== */
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin: 25px 0 50px 0;
+        }
+
+        nav a {
+            color: white;
+            padding: 12px 14px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 17px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: rgba(232, 167, 53, 0.2);
+        }
+
+        nav a.button {
+            background-color: #E8A735;
+            color: black;
+        }
+
+        nav a.button:hover {
+            background-color: #f0b84d;
+        }
+
+        /* =========================
+           CONTENT CONTAINER
+        ========================== */
+        .content {
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        /* =========================
+           HEADINGS
+        ========================== */
+        h1 {
+            color: #E8A735;
+            font-size: 34px;
+            line-height: 1.2;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #E8A735;
+            font-size: 26px;
+            margin-top: 40px;
+            margin-bottom: 15px;
+        }
+
+        /* =========================
+           PARAGRAPHS
+        ========================== */
+        p {
+            font-size: 18px;
+            margin-bottom: 18px;
+            color: #f0f0f0;
+        }
+
+        /* =========================
+           CTA SECTION
+        ========================== */
+        .cta-section {
+            text-align: center;
+            margin: 60px 0;
+            padding: 30px;
+            border: 2px solid #E8A735;
+            border-radius: 12px;
+        }
+
+        .cta-section h2 {
+            margin-top: 0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #E8A735;
+            color: black;
+            padding: 15px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            margin-top: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #f0b84d;
+        }
+
+        /* =========================
+           FOOTER — MATCH MAIN SITE
+        ========================== */
+        footer {
+            border-top: 1px solid #E8A735;
+            margin-top: 70px;
+            padding: 30px 10px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        footer a {
+            color: #E8A735;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .enquiry {
+            max-width: 650px;
+            margin: 70px auto;
+        }
+
+        .enquiry h2 {
+            color: #E8A735;
+            font-size: 32px;
+        }
+
+        .enquiry p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        form {
+            margin-top: 30px;
+        }
+
+        label {
+            display: block;
+            margin-top: 20px;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 14px;
+            border: 2px solid #E8A735;
+            border-radius: 8px;
+            background-color: black;
+            color: white;
+            font-size: 17px;
+        }
+
+        textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .send-button {
+            width: 100%;
+            background-color: #E8A735;
+            color: black;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================== */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 23px;
+            }
+
+            p {
+                font-size: 17px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- LOGO -->
+    <img class="logo" src="Black.jpg" alt="J.R Fitness Logo" loading="lazy">
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a class="button" href="About.html">About Me</a>
+       
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <div class="content">
+
+        <h1>Fitness changed my confidence. Now I help others do the same.</h1>
+
+        <h2>Hi, I'm Jack</h2>
+
+        <p>
+            My passion for fitness started back in school, where training
+            helped transform my confidence and mindset. When I left school,
+            I knew I wanted to build a career in fitness.
+        </p>
+
+        <p>
+            I started by gaining my Level 2 Gym Instructor qualification
+            and went on to spend over three years working in gyms,
+            developing my knowledge, experience and coaching skills.
+            I then took the next step and qualified as a Personal Trainer.
+        </p>
+
+        <h2>My Approach</h2>
+
+        <p>
+            I believe training should be built around you. I take the time
+            to understand your goals and create training that suits your
+            experience, lifestyle and ability.
+        </p>
+
+        <p>
+            Whether your goal is to build muscle, lose body fat, get
+            stronger or simply feel more confident in the gym, I'll be
+            there to support you, keep you accountable and help you
+            recognise the progress you're making.
+        </p>
+
+        <h2>Why I Coach</h2>
+
+        <p>
+            Fitness has given me more than just physical strength. It helped
+            me build confidence, discipline and a better mindset, and that's
+            something I want other people to experience too.
+        </p>
+
+        <p>
+            I know walking into a gym or starting a new programme can feel
+            intimidating. My job isn't just to give you exercises — it's to
+            help you understand what you're doing, why you're doing it, and
+            build the confidence to keep progressing.
+        </p>
+
+       
+    <!-- =========================
+         ENQUIRY FORM
+    ========================== -->
+
+    <section class="enquiry"
+             id="enquiry">
+
+        <h2>
+            Book an Enquiry
+        </h2>
+
+        <p>
+            Tell me a little about yourself and what
+            you're looking to achieve.
+        </p>
+
+
+        <form action="https://api.web3forms.com/submit"
+              method="POST">
+
+            <input type="hidden"
+                   name="access_key"
+                   value="0b119a6c-6fb7-46e3-8d5c-8006097a3e08">
+
+
+            <label for="name">
+                Your Name
+            </label>
+
+            <input type="text"
+                   id="name"
+                   name="name"
+                   required>
+
+
+            <label for="email">
+                Email
+            </label>
+
+            <input type="email"
+                   id="email"
+                   name="email"
+                   required>
+
+
+            <label for="message">
+                Your Message
+            </label>
+
+            <textarea id="message"
+                      name="message"
+                      required></textarea>
+
+
+            <button class="send-button"
+                    type="submit">
+                Send Enquiry
+            </button>
+
+        </form>
+
+    </section>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© J.R Fitness</p>
+        <p><a href="privacy.html">Privacy Policy</a></p>
+    </footer>
+
+</body>
+</html>
+
