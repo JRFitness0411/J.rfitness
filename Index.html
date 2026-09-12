@@ -1,0 +1,663 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>J.R Fitness</title>
+
+    <style>
+
+        /* =========================
+           MAIN WEBSITE
+        ========================== */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0 20px;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+
+        /* =========================
+           MAIN LOGO
+        ========================== */
+
+        .logo {
+            display: block;
+            width: 100%;
+            max-width: 320px;
+            height: auto;
+            margin: 30px auto 20px auto;
+        }
+
+
+        /* =========================
+           NAVIGATION
+        ========================== */
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin: 25px 0 50px 0;
+        }
+
+        nav a {
+            color: white;
+            padding: 12px 14px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        nav a.button {
+            background-color: #E8A735;
+            color: black;
+        }
+
+
+        /* =========================
+           HERO
+        ========================== */
+
+        .hero {
+            max-width: 650px;
+            margin: 50px auto;
+        }
+
+        .hero h1 {
+            color: #E8A735;
+            font-size: 34px;
+            line-height: 1.15;
+        }
+
+        .hero p {
+            font-size: 20px;
+            line-height: 1.6;
+        }
+
+        .hero-button {
+            display: inline-block;
+            background-color: #E8A735;
+            color: black;
+            padding: 15px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+
+        /* =========================
+           COACHING SECTION
+        ========================== */
+
+        .coaching {
+            max-width: 650px;
+            margin: 60px auto;
+        }
+
+        .coaching-title {
+            color: #E8A735;
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .coaching-intro {
+            font-size: 19px;
+            line-height: 1.5;
+            margin-bottom: 35px;
+        }
+
+
+        /* =========================
+           SERVICE BOXES
+        ========================== */
+
+        .service-box {
+            border: 2px solid #E8A735;
+            border-radius: 12px;
+            padding: 25px 20px;
+            margin: 30px 0;
+        }
+
+        .service-box h2 {
+            color: #E8A735;
+            font-size: 28px;
+            margin-top: 5px;
+        }
+
+        .service-box p {
+            color: white;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+
+        /* =========================
+           ONLINE LOGO
+        ========================== */
+
+        .online {
+            display: block;
+            width: 100%;
+            max-width: 320px;
+            height: auto;
+            margin: 10px auto 25px auto;
+        }
+        /* =================
+          1-1 logo
+        ===================== */
+        
+        .pt {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    margin: 10px auto 25px auto;
+        }
+      
+        /* =========================
+           PRICE
+        ========================== */
+
+        .price {
+            color: #E8A735 !important;
+            font-size: 30px !important;
+            font-weight: bold;
+            text-align: center;
+            margin: 25px 0;
+        }
+
+
+        /* =========================
+           BUTTONS
+        ========================== */
+
+        .main-button {
+            display: inline-block;
+            background-color: #E8A735;
+            color: black;
+            padding: 14px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            margin-top: 15px;
+        }
+
+
+        /* =========================
+           FAQ
+        ========================== */
+
+        .faq {
+            max-width: 650px;
+            margin: 70px auto;
+        }
+
+        .faq h2 {
+            color: #E8A735;
+            font-size: 32px;
+        }
+
+        .faq-box {
+            border: 2px solid #E8A735;
+            border-radius: 12px;
+            padding: 18px;
+            margin: 18px 0;
+        }
+
+        .faq-box summary {
+            font-size: 19px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .faq-box p {
+            font-size: 17px;
+            line-height: 1.5;
+            margin-top: 15px;
+            margin-bottom: 0;
+        }
+
+
+        /* =========================
+           ENQUIRY
+        ========================== */
+
+        .enquiry {
+            max-width: 650px;
+            margin: 70px auto;
+        }
+
+        .enquiry h2 {
+            color: #E8A735;
+            font-size: 32px;
+        }
+
+        .enquiry p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        form {
+            margin-top: 30px;
+        }
+
+        label {
+            display: block;
+            margin-top: 20px;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 14px;
+            border: 2px solid #E8A735;
+            border-radius: 8px;
+            background-color: black;
+            color: white;
+            font-size: 17px;
+        }
+
+        textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .send-button {
+            width: 100%;
+            background-color: #E8A735;
+            color: black;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        footer {
+            border-top: 1px solid #E8A735;
+            margin-top: 70px;
+            padding: 30px 10px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #E8A735;
+            text-decoration: none;
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================== */
+
+        @media (max-width: 600px) {
+
+            body {
+                padding: 0 20px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .coaching-title,
+            .faq h2,
+            .enquiry h2 {
+                font-size: 30px;
+            }
+
+            .service-box {
+                padding: 20px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         MAIN LOGO
+    ========================== -->
+
+    <img class="logo"
+         src="Black.jpg"
+         alt="J.R Fitness">
+
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <nav>
+
+        <a href="Index.html">
+            Home
+        </a>
+
+        <a class="button"
+           href="About.html">
+            About Me
+        </a>
+
+        <a class="button"
+           href="#enquiry">
+            Book Enquiry
+        </a>
+
+    </nav>
+
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="hero">
+
+        <h1>
+            Become the strongest version of yourself.
+        </h1>
+
+        <p>
+            Training built around you — your goals,
+            your lifestyle and your starting point.
+        </p>
+
+        <a class="hero-button"
+           href="#coaching">
+            Explore Coaching
+        </a>
+
+    </section>
+
+
+
+    <!-- =========================
+         COACHING
+    ========================== -->
+
+    <section class="coaching"
+             id="coaching">
+
+        <h2 class="coaching-title">
+            Choose Your Coaching
+        </h2>
+
+        <p class="coaching-intro">
+            Whether you want to train with me in person
+            or online, choose the coaching option that
+            works best for you.
+        </p>
+
+
+
+        <!-- =====================
+             ONLINE
+        ====================== -->
+
+        <div class="service-box">
+
+            <img class="online"
+                 src="Online.png"
+                 alt="J.R Fitness Online">
+
+            <p class="price">
+                £80 Per Month
+            </p>
+
+            <p>
+                Personalised training, practical nutrition
+                guidance, regular check-ins and ongoing support.
+            </p>
+
+            <a class="main-button"
+               href="Online.html">
+                What's Included →
+            </a>
+
+        </div>
+
+
+
+        <!-- =====================
+             1-1 PERSONAL TRAINING
+        ====================== -->
+
+        <div class="service-box">
+
+          <img class="pt"
+                src="pt.png"
+                 alt="Pt pic">
+            <p>
+                Prefer training in person? I also offer
+                1-1 personal training at Bellahouston,
+                Tollcross and Gorbals Leisure Centre.
+            </p>
+
+            <p>
+                Prices are set by each venue. Get in touch
+                with me and see which location works best
+                for you.
+            </p>
+
+            <a class="main-button"
+               href="Pt.html">
+                Explore 1-1 Training →
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         FAQ
+    ========================== -->
+
+    <section class="faq">
+
+        <h2>
+            Frequently Asked Questions
+        </h2>
+
+
+        <details class="faq-box">
+
+            <summary>
+                Do I need gym experience?
+            </summary>
+
+            <p>
+              No there is no previous expiernce needed as the sessions will be adapted to ur level 
+            </p>
+
+        </details>
+
+
+        <details class="faq-box">
+
+            <summary>
+                What's the difference between 1-1 and online coaching?
+            </summary>
+
+            <p>
+                1-1 personal training gives you in-person
+                coaching during your sessions. Online coaching
+                provides personalised programming, check-ins
+                and ongoing support remotely.
+            </p>
+
+        </details>
+
+
+        <details class="faq-box">
+
+            <summary>
+                How much is online coaching?
+            </summary>
+
+            <p>
+                Online coaching is £80 per month.
+            </p>
+
+        </details>
+
+
+        <details class="faq-box">
+
+            <summary>
+                Do you provide nutrition support?
+            </summary>
+
+            <p>
+                Practical nutrition guidance is available
+                to help support your training and goals.
+            </p>
+
+        </details>
+
+
+        <details class="faq-box">
+
+            <summary>
+                How do I get started?
+            </summary>
+
+            <p>
+                Send me an enquiry below and we can discuss
+                your goals and which coaching option is
+                right for you.
+            </p>
+
+        </details>
+
+    </section>
+
+
+
+    <!-- =========================
+         ENQUIRY FORM
+    ========================== -->
+
+    <section class="enquiry"
+             id="enquiry">
+
+        <h2>
+            Book an Enquiry
+        </h2>
+
+        <p>
+            Tell me a little about yourself and what
+            you're looking to achieve.
+        </p>
+
+
+        <form action="https://api.web3forms.com/submit"
+              method="POST">
+
+            <input type="hidden"
+                   name="access_key"
+                   value="0b119a6c-6fb7-46e3-8d5c-8006097a3e08">
+
+
+            <label for="name">
+                Your Name
+            </label>
+
+            <input type="text"
+                   id="name"
+                   name="name"
+                   required>
+
+
+            <label for="email">
+                Email
+            </label>
+
+            <input type="email"
+                   id="email"
+                   name="email"
+                   required>
+
+
+            <label for="message">
+                Your Message
+            </label>
+
+            <textarea id="message"
+                      name="message"
+                      required></textarea>
+
+
+            <button class="send-button"
+                    type="submit">
+                Send Enquiry
+            </button>
+
+        </form>
+
+    </section>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <p>
+            © J.R Fitness
+        </p>
+
+            <a a href="Privacy.html" class="privacy-link">
+        Privacy Policy
+            </a>
+        </>
+      <a a href="Terms.html" class ="Terms-link "> 
+      Terms and conditions 
+         </a>
+
+    </footer>
+
+
+</body>
+
+</html>
+
