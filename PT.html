@@ -1,0 +1,317 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1-1 Personal Training | J.R Fitness</title>
+
+    <style>
+        /* =========================
+           GLOBAL — MATCH MAIN SITE
+        ========================== */
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            padding: 0 20px;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* =========================
+           LOGO
+        ========================== */
+        .logo {
+            display: block;
+            width: 100%;
+            max-width: 180px;
+            height: auto;
+            margin: 30px auto 20px auto;
+        }
+
+        /* =========================
+           NAVIGATION — MATCHES HOMEPAGE
+        ========================== */
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin: 25px 0 50px 0;
+        }
+
+        nav a {
+            color: white;
+            padding: 12px 14px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 17px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: rgba(232, 167, 53, 0.2);
+        }
+
+        nav a.button {
+            background-color: #E8A735;
+            color: black;
+        }
+
+        nav a.button:hover {
+            background-color: #f0b84d;
+        }
+
+        /* =========================
+           CONTENT CONTAINER
+        ========================== */
+        .content {
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        /* =========================
+           HEADINGS
+        ========================== */
+        h1 {
+            color: #E8A735;
+            font-size: 34px;
+            line-height: 1.2;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #E8A735;
+            font-size: 26px;
+            margin-top: 40px;
+            margin-bottom: 15px;
+        }
+
+        /* =========================
+           PARAGRAPHS
+        ========================== */
+        p {
+            font-size: 18px;
+            margin-bottom: 18px;
+            color: #f0f0f0;
+        }
+
+        /* =========================
+           VENUE LIST
+        ========================== */
+        .venue-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0 30px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .venue-list li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 19px;
+            font-weight: 500;
+        }
+
+        .venue-list li::before {
+            content: "📍";
+            color: #E8A735;
+            font-size: 22px;
+            flex-shrink: 0;
+        }
+
+        /* =========================
+           BENEFITS LIST
+        ========================== */
+        .benefits-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 30px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .benefits-list li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 18px;
+        }
+
+        .benefits-list li::before {
+            content: "✅";
+            color: #E8A735;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+
+        /* =========================
+           CTA SECTION
+        ========================== */
+        .cta-section {
+            text-align: center;
+            margin: 60px 0;
+            padding: 30px;
+            border: 2px solid #E8A735;
+            border-radius: 12px;
+        }
+
+        .cta-section h2 {
+            margin-top: 0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #E8A735;
+            color: black;
+            padding: 15px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            margin-top: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #f0b84d;
+        }
+
+        /* =========================
+           FOOTER — MATCH MAIN SITE
+        ========================== */
+        footer {
+            border-top: 1px solid #E8A735;
+            margin-top: 70px;
+            padding: 30px 10px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        footer a {
+            color: #E8A735;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* =========================
+           MOBILE
+        ========================== */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 23px;
+            }
+
+            p {
+                font-size: 17px;
+            }
+
+            .venue-list li {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- LOGO -->
+    <img class="logo" src="pt.png" alt="J.R Fitness Logo" loading="lazy">
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="Index.html">Home</a>
+        <a href="About.html">About Me</a>
+        <a class="button" href="index.html#enquiry">Book Enquiry</a>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <div class="content">
+
+        <h1>1-1 Personal Training — In-Person Support That Delivers Results</h1>
+
+        <p>
+            Prefer training face-to-face? My 1-1 personal training gives you
+            dedicated, one-on-one attention to help you hit your goals —
+            with form feedback, real-time motivation, and a plan built around
+            the equipment at your local leisure centre.
+        </p>
+
+        <!-- VENUES — SIMPLE BULLET LIST -->
+        <h2>Where We Train</h2>
+        <p>
+            I offer 1-1 sessions at three convenient Glasgow locations:
+        </p>
+
+        <ul class="venue-list">
+            <li>Bellahouston Leisure Centre</li>
+            <li>Tollcross Leisure Centre</li>
+            <li>Gorbals Leisure Centre</li>
+        </ul>
+
+        <p>
+            Let me know which one works best for you, and I’ll share venue details and booking info.
+        </p>
+
+        <!-- BENEFITS OF 1-1 TRAINING -->
+        <h2>What Makes In-Person Training Different?</h2>
+        <ul class="benefits-list">
+            <li>Real-time form feedback to prevent injury and get better results</li>
+            <li>Personalised attention — every minute of your session is focused on YOU</li>
+            <li>Built-in accountability to keep you consistent</li>
+            <li>Adaptable workouts based on what equipment is available that day</li>
+            <li>Motivation when you need it most — I'll push you to hit your potential</li>
+        </ul>
+
+        <!-- PRICING NOTE -->
+        <h2>Pricing</h2>
+        <p>
+            1-1 personal training sessions follow the official 
+            <strong>Glasgow Life PT prices</strong>, which are standard across all 
+            three leisure centres. When you enquire, I’ll send over the full 
+            pricing structure, session length options, and booking details.
+        </p>
+
+        <!-- CTA BOX -->
+        <div class="cta-section">
+            <h2>Ready to Train In-Person?</h2>
+            <p>
+                Tell me which location works for you and what you want to achieve —
+                we'll take it from there.
+            </p>
+            <a class="cta-button" href="Index.html#enquiry">Book Your 1-1 Enquiry →</a>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© J.R Fitness</p>
+        <p><a href="privacy.html">Privacy Policy</a></p>
+      <p><a href=="Terms.html">Terms and Conditions</a></p>
+    </footer>
+
+</body>
+</html>
